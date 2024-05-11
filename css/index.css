@@ -1,0 +1,246 @@
+:root
+{
+    --black-clr-1: #000;
+    --black-clr-2: #202124;
+    --white-clr-1: #fff;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+    transition: 0.3s;
+}
+header h1
+{
+    float: left;
+    line-height: 30px;
+}
+header ul
+{
+    float: right;
+}
+header ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+header ul li a
+{
+    color: var(--black-clr-1);
+    background: var(--white-clr-1);
+    padding: 10px 20px;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    line-height: 30px;
+}
+header ul li a:hover
+{
+    color: var(--white-clr-1);
+    background: var(--black-clr-1);
+}
+header .clearer
+{
+    clear: both;
+}
+
+.featureSec
+{
+    position: relative;
+    margin: 0;
+    padding: 40px;
+    height: 500px;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/conferene.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featureCon
+{
+/*    background: orange;*/
+    max-width: 90%;
+}
+.featureSec p
+{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px black;
+    font-size: 56px;
+    font-weight: 200;
+    color: var(--white-clr-1);
+}
+.countdownSec
+{
+    text-align: center;
+    padding: 40px;
+}
+
+#timeCounter
+{
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 0 4px lightgrey;
+    text-transform: uppercase;
+}
+
+.hdng
+{
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-size: 34px;
+}
+
+
+
+
+.speakers
+{
+    padding: 40px;
+}
+.speakers h2
+{
+    text-transform: uppercase;
+    margin-right: 25vw;
+
+}
+.speakers .speakerBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.speakers .speakerBox ul
+{
+    margin: 0px auto;
+}
+.speakers .speakerBox ul li
+{
+    display: inline-grid;
+    list-style-type: none;
+    margin: 50px;
+    text-align: center;
+}
+.speakers .speakerBox ul li img
+{
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px lightgrey;
+    margin-bottom: 12px;
+}
+.speakers .speakerBox ul li p
+{
+    margin-top: 5px;
+}
+.speakers .speakerBox ul li p.speakerpostn
+{
+    color: grey;
+}
+
+
+
+
+.aboutSec
+{
+    margin: 0;
+    padding: 40px;
+}
+.aboutSec p
+{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+
+.footerSec
+{
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSec .box
+{
+    width: 400px;
+    height: auto;
+    background: transparent;
+    padding: 40px;
+    border-radius: 20px;
+}
+.footerSec .box h2
+{
+    text-align: center;
+}
+.footerSec .box form label
+{
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+.footerSec .box form label,
+.footerSec .box form input
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footerSec .box form input
+{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+/*    border-bottom: 3px solid #1abc9c;*/
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    background: unset;
+}
+.footerSec .box form button
+{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.footerSec .box form button:hover
+{
+/*    border: 1px solid #000;*/
+    color: #fff;
+    background: #000;
+    transition: 0.3s;
+}

@@ -1,0 +1,113 @@
+@media screen and (max-width: 546px)
+{
+	header
+	{
+	    padding: 25px;
+	}
+	header h1
+	{
+		font-size: 24px;
+	}
+	header ul li a
+	{
+	    padding: 5px 10px;
+	    margin: 0 0 0 3px;
+	    font-size: 12px;
+	}
+
+
+	.featureSec
+	{
+		padding: 25px;
+	}
+	.featureSec p
+	{
+		font-size: 36px;
+	}
+
+	.countdownSec
+	{
+	    text-align: center;
+	    padding: 25px;
+	}
+
+	#timeCounter
+	{
+	    font-size: 18px;
+	    font-weight: 500;
+	    text-shadow: 0 0 4px lightgrey;
+	    text-transform: uppercase;
+	}
+
+	.hdng
+	{
+	    text-transform: uppercase;
+	    margin: 0 0 20px;
+	    font-size: 24px;
+	}
+
+
+
+	.speakers
+	{
+		padding: 25px;
+	}
+	.speakers .speakerBox ul li
+	{
+	    margin: 25px;
+	}
+	.speakers .speakerBox ul li img
+	{
+	    width: 200px;
+	    margin-bottom: 5px;
+	}
+	
+	.speakers .speakerBox ul li p
+	{
+	    margin-top: 2px;
+	    font-size: 14px;
+	}
+
+
+
+	.aboutSec
+	{
+	    padding: 25px;
+	}
+	.aboutSec p
+	{
+	    font-size: 14px;
+	    line-height: 24px;
+	    letter-spacing: 0.3px;
+	}
+
+
+
+	.footerSec
+	{
+	    padding: 40px 25px;
+	}
+	.footerSec .box
+	{
+	    width: 400px;
+	    padding: 30px;
+	    border-radius: 20px;
+	}
+	.footerSec .box form input
+	{
+	    padding: 8px 16px;
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px)
+{
+	header h1
+	{
+		font-size: 21px;
+	}
+}

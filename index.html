@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Pune Conference</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive_index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&family=Inconsolata:wght@200;300;400;500;600&family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Agile Pune</h1>
+
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="clearer"></div>
+    </header>
+
+
+    <div class="featureSec">
+        <div class="featureCon">
+            <p>On Jan 15, 2024</p>
+        </div>
+    </div>
+
+
+    <div class="countdownSec">
+        <h2 class="hdng"> Conference Countdown</h2>
+        <p id="timeCounter"></p>
+    </div>
+
+
+    <div class="speakers">
+        <h2 class="hdng">Speakers</h2>
+        <div class="speakerBox">
+            <ul>
+                <li>
+                    <img src="images/1.jpg" />
+                    <p>John Doe</p>
+                    <p class="speakerpostn">DevOps Engineer</p>
+                </li>
+                <li>
+                    <img src="images/2.jpg" />
+                    <p>Petter Porker</p>
+                    <p class="speakerpostn">Software Engineer</p>
+                </li>
+                <li>
+                    <img src="images/3.jpg" />
+                    <p>Shopia</p>
+                    <p class="speakerpostn">Developer Advacate</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="aboutSec" id="about">
+        <h2 class="hdng">About Us</h2>
+        <p>
+            Welcome to the Agile Pune Conference. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+
+
+    <div class="footerSec" id="contact">
+        <div class="box">
+            <h2 class="hdng">Contact Us</h2>
+            <form>
+                <label>Name</label>
+                <input type="text" required><br>
+
+                <label>Mobile</label>
+                <input type="number" required><br>
+
+                <label>Email</label>
+                <input type="email" required><br>
+
+                <label>City</label>
+                <input type="text" required><br>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>    
+            
+    </div>
+
+
+    <script type="text/javascript">
+            var countDownDate = new Date("Jan 15, 2024 00:00:00").getTime();
+
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("timeCounter").innerHTML = days + "d : " + hours + "h : "
+                    + minutes + "m : " + seconds + "s";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timeCounter").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+
+</body>
+</html>
